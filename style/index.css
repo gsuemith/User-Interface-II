@@ -53,13 +53,17 @@ table {
 
 
 /* Add CSS styling here */
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+
 body {
     margin: 0;
     padding:0;
     background-image: radial-gradient(lightblue, slategray 70%);
     background-size: cover;
     font-size: 20px;
-    color:#333333
+    font-family:'Amatic SC', cursive;
+    color:#333333;
+    box-sizing: border-box;
 }
 
 h1 {
@@ -67,13 +71,16 @@ h1 {
 }
 
 h2 {
-    font-size: 1.5em;
+    font-size: 2em;
 }
 
 .container {
     display: flex;
 }
 
+.content {
+    height: 70vh;
+}
 
 header {
     margin-top: 2em;
@@ -83,8 +90,10 @@ h1, h2 {
     background: inherit;
     text-align: center;
     padding: 2em auto;
-    font-family: Verdana, "Lucida Console", monospace, Monaco;
+    /*font-family: Verdana, "Lucida Console", monospace, Monaco;*/
     margin-bottom: .5em;
+    text-transform: uppercase;
+    font-weight:lighter;
 }
 nav {
     justify-content: center;
@@ -100,56 +109,77 @@ nav a {
     text-decoration: none;
     color: white;
     padding: .5em 0 0;
+    transition: .4s;
+}
+
+nav a:hover {
+    background:none;
+    font-size: .9em;
+}
+
+a.current{
+    background: black;
 }
 
 p.information {
-    text-align: center;
+    text-align: left;
     padding: 10px 80px 40px;
-    font-family: serif;
 }
 
 
 #projects {
     flex-wrap: wrap;
     justify-content: center;
-    flex-direction: row-reverse
+    flex-direction: row-reverse;
 }
 .banner {
     width: 100%;
     height: 500px;
     background-image: url("https://helpx.adobe.com/content/dam/help/en/photoshop/using/convert-color-image-black-white/jcr_content/main-pars/before_and_after/image-before/Landscape-Color.jpg");
     background-size: cover;
-    background-position-y: center;
+    background-position: center;
     margin: 0;
    
 }
 
 
 .project {
-    background: #FFFFFF;
-    
+    background-image: url("https://picsum.photos/150/500");
+    background-size: cover;
+    box-shadow: 5px 5px 5px black;
     
     width: 150px;
     height: 500px;
     margin: 10px;
     border-radius: 20px;
     padding: 25px;
+    transition: .3s;
 }
 
 .project h3 {
     text-align: right;
     color: black;
     font-weight: bolder;
-    background: inherit;
+    background: none;
     border-bottom: 2px grey solid;
+}
+
+.project:hover {
+    box-shadow: 7px 7px 7px black;
+    cursor: pointer;
 }
 
 .description {
     background: none;
+    box-shadow: none;
     text-align: left;
     font-size: larger;
     padding: auto;
     align-items: center;
+}
+
+.description:hover {
+    box-shadow: none;
 }
 
 footer {
@@ -157,7 +187,7 @@ footer {
     height: 200px;
     margin-top: 10px;
     align-items: center;
-    
+
 }
 
 footer button {
