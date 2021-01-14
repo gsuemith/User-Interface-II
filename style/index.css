@@ -137,7 +137,31 @@ p.information {
     background-size: cover;
     background-position: center;
     margin: 0;
-   
+    justify-content: center;
+    align-items: center;
+}
+
+.banner a {
+    
+    background: none;
+    text-decoration: none;
+    text-align: center;
+    text-shadow: 3px 3px 3px #111;
+    height: 100%;
+    width: 100%;
+    border: none;
+    color: white;
+    font-size: 2em;
+    font-family: inherit;
+    padding-top: 15%;
+    cursor: pointer;
+    box-sizing:border-box;
+    transition: .4s;
+}
+
+.banner a:hover{
+    text-shadow: 6px 6px 3px #111;
+    font-size: 2.2em;
 }
 
 
