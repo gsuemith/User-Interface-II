@@ -89,7 +89,6 @@ h1, h2 {
     background: inherit;
     text-align: center;
     padding: 2em auto;
-    /*font-family: Verdana, "Lucida Console", monospace, Monaco;*/
     margin-bottom: .5em;
     text-transform: uppercase;
     font-weight:lighter;
@@ -148,7 +147,7 @@ p.information {
     text-align: center;
     text-shadow: 3px 3px 3px #111;
     height: 100%;
-    width: 100%;
+    width: 40%;
     border: none;
     color: white;
     font-size: 2em;
@@ -166,14 +165,12 @@ p.information {
 
 
 .project {
-    background-image: url("https://picsum.photos/id/1018/150/500");
     background-size: cover;
     box-shadow: 5px 5px 5px black;
     
     width: 150px;
     height: 500px;
     margin: 10px;
-    border-radius: 20px;
     padding: 25px;
     transition: .3s;
 }
@@ -222,9 +219,20 @@ footer button {
     margin: auto;
 }
 
-@media (max-width: 1366px) {
+/* Change Project description behavior on wrap*/
+@media (max-width: 1120px) {
+    .description {
+        width: 80%;
+        height: 100px;
+    }
+}
+
+@media (max-width: 800px) {
     .banner {
         height: 350px;
+    }
+    .banner a {
+        width: 60%
     }
 
     #projects .description {
@@ -253,9 +261,14 @@ footer button {
         padding: 10px 3% 10px;
     }
 
+    .banner a {
+        width: 80%;
+    }
+
     #projects {
         padding: 0;
         justify-content: space-evenly;
+        min-width: 330px;
     }
     .project {
         margin: 2%;
