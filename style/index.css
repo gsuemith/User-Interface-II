@@ -54,15 +54,18 @@ table {
 
 /* Add CSS styling here */
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
 
 body {
     margin: 0;
     padding:0;
     background-image: radial-gradient(lightblue, slategray 70%);
     background-size: cover;
-    font-size: 20px;
-    font-family:'Amatic SC', cursive;
+    font-size: 30px;
+    font-family: 'Acme', 'Amatic SC', cursive;
     color:#333333;
+    font-weight: 900;
 }
 
 h1 {
@@ -86,6 +89,7 @@ header {
 }
 
 h1, h2 {
+    font-family: 'Fredericka the Great';
     background: inherit;
     text-align: center;
     padding: 2em auto;
@@ -106,7 +110,7 @@ nav a {
     text-align: center;
     text-decoration: none;
     color: white;
-    padding: .5em 0 0;
+    padding: .5em 1em;
     transition: .4s;
 }
 
