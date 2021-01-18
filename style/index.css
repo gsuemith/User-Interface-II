@@ -62,18 +62,10 @@ body {
     padding:0;
     background-image: radial-gradient(lightblue, slategray 70%);
     background-size: cover;
-    font-size: 30px;
-    font-family: 'Acme', 'Amatic SC', cursive;
+    font-size: 25px;
+    font-family: 'Open Sans', sans-serif;
     color:#333333;
     font-weight: 900;
-}
-
-h1 {
-    font-size: 2em;
-}
-
-h2 {
-    font-size: 2em;
 }
 
 .container {
@@ -89,7 +81,8 @@ header {
 }
 
 h1, h2 {
-    font-family: 'Fredericka the Great';
+    font-size: 2.5em;
+    font-family: 'Amatic SC', cursive;
     background: inherit;
     text-align: center;
     padding: 2em auto;
@@ -97,13 +90,16 @@ h1, h2 {
     text-transform: uppercase;
     font-weight:lighter;
 }
+a {
+    font-family: 'Amatic SC', cursive;
+}
 nav {
     justify-content: center;
     margin: 2em;
 }
 
 nav a {
-    width: 100px;
+    width: 90px;
     height: 30px;
     background: red;
     margin: 10px 1px;
@@ -116,7 +112,6 @@ nav a {
 
 nav a:hover {
     background:none;
-    font-size: .9em;
 }
 
 a.current{
@@ -155,7 +150,6 @@ p.information {
     border: none;
     color: white;
     font-size: 2em;
-    font-family: inherit;
     padding-top: 15%;
     cursor: pointer;
     box-sizing:border-box;
@@ -196,7 +190,6 @@ p.information {
     background: none;
     box-shadow: none;
     text-align: left;
-    font-size: larger;
     padding: auto;
     align-items: center;
 }
@@ -215,12 +208,13 @@ footer {
 
 footer button {
     background: slategray;
-    height: 50px;
-    width: 100px;
+    height: 80px;
+    width: 160px;
     border: none;
     border-radius: 10px;
     cursor: pointer;
     margin: auto;
+    font-size: large;
 }
 
 /* Change Project description behavior on wrap*/
